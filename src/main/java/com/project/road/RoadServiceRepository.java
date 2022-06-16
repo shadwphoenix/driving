@@ -44,7 +44,7 @@ public class RoadServiceRepository implements AutoCloseable {
         preparedStatement.setInt(1, RoadServiceService.getInstance().getRoadCode());
         resultSet = preparedStatement.executeQuery();
         while (resultSet.next()){
-            RoadServiceService.getInstance().setRoadCost(resultSet.getInt("service_cost"));
+            RoadServiceService.getInstance().setRoadCost(resultSet.getInt("road_cost"));
         }
     }
 
