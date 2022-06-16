@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="687.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/17.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.driving.CityController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="553.0" prefWidth="665.0" style="-fx-background-color: skyBlue;">
+         <children>
+            <Button fx:id="payBtn" layoutX="519.0" layoutY="495.0" mnemonicParsing="false" onAction="#payBtnPressed" prefHeight="10.0" prefWidth="132.0" style="-fx-font-size: 20; -fx-background-color: grey;" text="pay" />
+            <TextField fx:id="cardNo" layoutX="14.0" layoutY="392.0" prefHeight="36.0" prefWidth="157.0" promptText="card no" />
+            <TextField fx:id="password" layoutX="14.0" layoutY="443.0" prefHeight="36.0" prefWidth="157.0" promptText="password" />
+            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="83.0" prefWidth="157.0" style="-fx-font-size: 20;" text="Enter Car info" />
+            <Label fx:id="displayLabel1" alignment="CENTER" layoutX="359.0" layoutY="24.0" prefHeight="238.0" prefWidth="282.0" style="-fx-font-size: 15;" />
+            <TextField fx:id="plateNoTxt" layoutX="14.0" layoutY="97.0" prefHeight="36.0" prefWidth="157.0" promptText="plateNo" />
+            <TextField fx:id="carNoTxt" layoutX="14.0" layoutY="150.0" prefHeight="36.0" prefWidth="157.0" promptText="carNo" />
+            <Label alignment="CENTER" layoutX="14.0" layoutY="262.0" prefHeight="83.0" prefWidth="157.0" style="-fx-font-size: 20;" text="Enter Card info" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

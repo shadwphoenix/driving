@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="771.0" prefWidth="629.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/17.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.driving.PoliceViolationController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="743.0" prefWidth="601.0" style="-fx-background-color: skyblue;">
+         <children>
+            <Button layoutX="403.0" layoutY="660.0" mnemonicParsing="false" onAction="#goBackToMainPolice" prefHeight="69.0" prefWidth="182.0" style="-fx-background-color: grey; -fx-font-size: 25;" text="Main Menu" />
+            <TextField fx:id="violationDesText" layoutX="17.0" layoutY="236.0" prefHeight="35.0" prefWidth="167.0" />
+            <TextField fx:id="pointText" layoutX="185.0" layoutY="236.0" prefHeight="35.0" prefWidth="55.0" promptText="Number" />
+            <TextField fx:id="plateText" layoutX="241.0" layoutY="236.0" prefHeight="35.0" prefWidth="71.0" />
+            <TextField alignment="CENTER" editable="false" layoutX="17.0" layoutY="201.0" prefHeight="35.0" prefWidth="167.0" text="Violation description" />
+            <TextField alignment="CENTER" editable="false" layoutX="185.0" layoutY="201.0" prefHeight="35.0" prefWidth="55.0" text="Point" />
+            <TextField alignment="CENTER" editable="false" layoutX="241.0" layoutY="201.0" prefHeight="35.0" prefWidth="71.0" text="Plate" />
+            <TextField alignment="CENTER" editable="false" layoutX="312.0" layoutY="201.0" prefHeight="35.0" prefWidth="71.0" text="People Id" />
+            <TextField alignment="CENTER" editable="false" layoutX="383.0" layoutY="201.0" prefHeight="35.0" prefWidth="71.0" text="Charge" />
+            <TextField alignment="CENTER" editable="false" layoutX="454.0" layoutY="201.0" prefHeight="35.0" prefWidth="131.0" text="Time" />
+            <TextField fx:id="peopleIdText" layoutX="312.0" layoutY="236.0" prefHeight="35.0" prefWidth="71.0" promptText="Number" />
+            <TextField fx:id="chargeText" layoutX="383.0" layoutY="236.0" prefHeight="35.0" prefWidth="71.0" promptText="Number" />
+            <TextField fx:id="timeText" layoutX="454.0" layoutY="236.0" prefHeight="35.0" prefWidth="131.0" promptText="yyy-MM-dd HH:mm:ss" />
+            <Button layoutX="243.0" layoutY="303.0" mnemonicParsing="false" onAction="#registerBtn" prefHeight="35.0" prefWidth="116.0" style="-fx-background-color: grey; -fx-font-size: 20;" text="Register" />
+            <Label fx:id="displayLabel" alignment="CENTER" layoutX="119.0" layoutY="55.0" prefHeight="110.0" prefWidth="364.0" style="-fx-font-size: 30;" text="Enter new Violation" />
+         </children></AnchorPane>
+   </children>
+</StackPane>

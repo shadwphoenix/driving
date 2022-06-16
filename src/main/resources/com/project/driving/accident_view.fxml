@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="771.0" prefWidth="855.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/17.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.driving.AccidentController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="727.0" prefWidth="807.0" style="-fx-background-color: skyBlue;">
+         <children>
+            <TextField fx:id="carNumberAccidents" layoutX="15.0" layoutY="67.0" prefHeight="60.0" prefWidth="266.0" promptText="Enter Car Number" style="-fx-background-color: grey; -fx-font-size: 20;" />
+            <Button layoutX="95.0" layoutY="140.0" mnemonicParsing="false" onAction="#findAccidents" prefHeight="38.0" prefWidth="106.0" style="-fx-background-color: grey;" text="Find accidents" />
+            <ListView fx:id="idListview" layoutX="299.0" layoutY="44.0" prefHeight="675.0" prefWidth="52.0" />
+            <ListView fx:id="desListview" layoutX="351.0" layoutY="44.0" prefHeight="675.0" prefWidth="246.0" />
+            <ListView fx:id="policeIdListview" layoutX="597.0" layoutY="44.0" prefHeight="675.0" prefWidth="52.0" />
+            <ListView fx:id="timeListview" layoutX="650.0" layoutY="44.0" prefHeight="675.0" prefWidth="131.0" />
+            <TextField alignment="CENTER" editable="false" layoutX="299.0" layoutY="19.0" prefHeight="25.0" prefWidth="52.0" text="ID" />
+            <TextField alignment="CENTER" editable="false" layoutX="351.0" layoutY="19.0" prefHeight="25.0" prefWidth="246.0" text="Description" />
+            <TextField alignment="CENTER" editable="false" layoutX="597.0" layoutY="19.0" prefHeight="25.0" prefWidth="52.0" text="PoliceID">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextField>
+            <TextField alignment="CENTER" editable="false" layoutX="649.0" layoutY="19.0" prefHeight="25.0" prefWidth="131.0" text="Time">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextField>
+            <Button layoutX="14.0" layoutY="653.0" mnemonicParsing="false" onAction="#switchToMainPage" prefHeight="60.0" prefWidth="158.0" style="-fx-background-color: grey; -fx-font-size: 20;" text="Main Menu" />
+            <Label fx:id="displayLabel" alignment="CENTER" layoutX="19.0" layoutY="314.0" prefHeight="135.0" prefWidth="257.0" style="-fx-font-size: 20;" />
+            <Label alignment="CENTER" layoutX="41.0" layoutY="7.0" prefHeight="50.0" prefWidth="214.0" style="-fx-font-size: 30;" text="Car Number" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="387.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/17.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.driving.LoginController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="456.0" prefWidth="355.0" style="-fx-background-color: skyBlue;">
+         <children>
+            <TextField fx:id="licenseIdTxtField" layoutX="104.0" layoutY="223.0" promptText="enter license id" style="-fx-background-color: grey;" />
+            <TextField fx:id="firstNameTxtField" layoutX="104.0" layoutY="271.0" promptText="enter first name" style="-fx-background-color: grey;" />
+            <TextField fx:id="lastNameTxtField" layoutX="104.0" layoutY="320.0" promptText="enter last name" style="-fx-background-color: grey;" />
+            <Button layoutX="146.0" layoutY="388.0" mnemonicParsing="false" onAction="#pressLoginBtn" prefHeight="25.0" prefWidth="63.0" text="login" />
+            <ImageView fitHeight="176.0" fitWidth="200.0" layoutX="117.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@IRI.Traffic-Police.svg.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="displayLabel" layoutX="1.0" layoutY="185.0" prefHeight="25.0" prefWidth="355.0" style="-fx-alignment: center;" textAlignment="CENTER" />
+            <CheckBox layoutX="253.0" layoutY="388.0" mnemonicParsing="false" onAction="#switchToPolice" prefHeight="25.0" prefWidth="63.0" text="Police" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</StackPane>

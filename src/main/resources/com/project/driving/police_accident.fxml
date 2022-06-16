@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="732.0" prefWidth="694.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/17.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.driving.PoliceAccidentController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="695.0" prefWidth="664.0" style="-fx-background-color: skyBlue;">
+         <children>
+            <Label alignment="CENTER" layoutX="193.0" layoutY="47.0" prefHeight="178.0" prefWidth="278.0" style="-fx-font-size: 30;" />
+            <TextField alignment="CENTER" editable="false" layoutX="102.0" layoutY="263.0" prefHeight="25.0" prefWidth="91.0" text="Car Number" />
+            <TextField alignment="CENTER" editable="false" layoutX="430.0" layoutY="263.0" prefHeight="25.0" prefWidth="151.0" text="Accident Time" />
+            <TextField alignment="CENTER" editable="false" layoutX="192.0" layoutY="263.0" prefHeight="25.0" prefWidth="239.0" text="Accident Description" />
+            <TextField fx:id="carNoTxt" alignment="CENTER" layoutX="102.0" layoutY="288.0" prefHeight="25.0" prefWidth="91.0" promptText="Number" />
+            <TextField fx:id="accidentTxt" alignment="CENTER" layoutX="192.0" layoutY="288.0" prefHeight="25.0" prefWidth="239.0" />
+            <TextField fx:id="accidentTimeTxt" alignment="CENTER" layoutX="430.0" layoutY="288.0" prefHeight="25.0" prefWidth="151.0" promptText="yyyy-MM-dd HH:mm:ss" />
+            <Button layoutX="234.0" layoutY="348.0" mnemonicParsing="false" onAction="#registerBtn" prefHeight="77.0" prefWidth="158.0" style="-fx-background-color: grey; -fx-font-size: 20;" text="Register" />
+            <Label fx:id="displayLabel" alignment="CENTER" layoutX="134.0" layoutY="98.0" prefHeight="143.0" prefWidth="396.0" style="-fx-font-size: 30;" text="Enter new accident" />
+            <Button layoutX="465.0" layoutY="588.0" mnemonicParsing="false" onAction="#goBackToMainPolice" prefHeight="93.0" prefWidth="185.0" style="-fx-background-color: grey; -fx-font-size: 20;" text="Main menu" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
